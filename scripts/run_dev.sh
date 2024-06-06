@@ -282,6 +282,7 @@ docker run -it --rm \
     ${DOCKER_ARGS[@]} \
     -v $ISAAC_ROS_DEV_DIR:/workspaces/isaac_ros-dev \
     -v /etc/localtime:/etc/localtime:ro \
+    -v /dev/bus/usb:/dev/bus/usb \
     --name "$CONTAINER_NAME" \
     --runtime nvidia \
     --user="admin" \
